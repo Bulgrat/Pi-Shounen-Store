@@ -60,6 +60,7 @@
 
                         </ul>
                         <form action="{{ route('search.product') }}" class="d-flex form-group ms-auto pe-4"> <!--busca de produto-->
+                            @csrf
                             <input type="search" aria-label="Search" class="form-control me-2" placeholder="Pesquise o produto" name="s">
                             <div class="input-group-append px-1">
                                 <button style="border:2px solid black; border-color:#d22630; color:#d22630" type="submit" class="input-group-text btn">Buscar</button>

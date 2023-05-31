@@ -29,7 +29,8 @@
 
 <section class="container ">
     <div class="row justify-content-center justify-content-lg-start">
-        @foreach ($products as $product)
+        @foreach ($products->sortBy('name') as $product)
+        
         <div class="card bg-light mx-3 shadow p-3 mb-5 bg-white rounded" style="width: 18rem;">
             <a class="h-100 w-100" href="{{ route('show.product', $product->id) }}">
 

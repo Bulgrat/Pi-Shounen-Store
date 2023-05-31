@@ -26,6 +26,8 @@
                 <td>{{$product->description}}</td>
                 <td>{{$product->Category->id}}</td>
                 <td>{{$product->Category->name}}</td>
+                <td>{{$product->type->id}}</td>
+                <td>{{$product->type->name}}</td>
                 <td>@foreach($product->Tags()->get() as $tag)
                 {{$tag->name}}
                 @endforeach</td>

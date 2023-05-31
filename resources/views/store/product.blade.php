@@ -13,7 +13,7 @@
         <div class="d-flex flex-column">
             <h2 class="text-uppercase text-left">{{ $product->name }}</h2>
             <p class="text-muted">{{ $product->description }}</p>
-            <div style="height: 28rem; width:19rem;" class=" text-left shadow-sm p-3 mb-3 bg-light rounded">
+            <div style="width:19rem;" class=" text-left shadow-sm p-3 mb-3 bg-light rounded">
                 <img class="h-100 w-100" src="{{ asset($product->image) }}">
             </div>
             <div class="">
@@ -26,8 +26,8 @@
             <form class="row" action="{{ route('cart.store', $product->id) }}" method="POST">
                 @csrf
 
-                <span style="color:#d22630" class="h2 ">R$ {{ number_format($product->price, 2, ',', '.') }}</span>
-                <button style="width:294px;background-color:#101820" type="submit" class="btn ms-2 btn-lg text-white">Comprar</button>
+                <span style="color:#101820" class="h2 ">R$ {{ number_format($product->price, 2, ',', '.') }}</span>
+                <button style="width:294px;" type="submit" class="btn ms-2 btn-lg text-white btn-danger">Comprar <img src="/../images/cart2.png" width="25"></button>
             </form>
         </div>
 

@@ -1,5 +1,7 @@
 @extends('layouts.store')
 @section('content')
+<script src="{{asset('js/cep.js')}}"></script>
+
 <section class="container mt-5">
     <div class="row">
         <div class="col-lg-4 col-sm-6 p-4">

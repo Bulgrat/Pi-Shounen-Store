@@ -9,7 +9,6 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Nunito+Sans:300,400,600,700&display=swap" rel="stylesheet">
     <link href="../../css/app.css" rel="stylesheet">
-    <script src="{{asset('js/cep.js')}}"></script>
 
     <title>Shonen Store</title>
 </head>

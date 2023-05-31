@@ -9,11 +9,11 @@
     </nav>
 </section>
 <section class="d-flex justify-content-center container py-4">
-    <div style="height: 50rem; width:28rem;" class="bg-light shadow-lg p-4 pb-4 bg-white rounded">
+    <div style="width:28rem;" class="bg-light shadow-lg p-4 pb-4 bg-white rounded">
         <div class="d-flex flex-column">
             <h2 class="text-uppercase text-left">{{ $product->name }}</h2>
             <p class="text-muted">{{ $product->description }}</p>
-            <div style="width:19rem;" class=" text-left shadow-sm p-3 mb-3 bg-light rounded">
+            <div style="height: 28rem; width:19rem;" class=" text-left shadow-sm p-3 mb-3 bg-light rounded">
                 <img class="h-100 w-100" src="{{ asset($product->image) }}">
             </div>
             <div class="">

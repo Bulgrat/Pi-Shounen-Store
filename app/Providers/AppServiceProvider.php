@@ -26,5 +26,9 @@ class AppServiceProvider extends ServiceProvider
     {
        Paginator::useBootstrap(); // para o paginator funcionar com bootstrap e ficar bonitinho
 
+       if(config('app.env') === 'production') {
+        \URL::forceScheme('https');
+    }
+
     }
 }

@@ -47,7 +47,7 @@
                 <a style="background-color:#101820" href="{{ route('show.product', $product->id) }}" class="btn btn-md card-link text-white">Visualizar</a>
                 <form action="{{ route('cart.store', $product->id) }}" method="POST" style="display:inline">
                     @csrf
-                    <button style="background-color:#d22630" type="submit" class="btn text-white btn-sm card-link">Comprar <img src="/public/images/cart2.png" width="25"></button>
+                    <button style="background-color:#d22630" type="submit" class="btn text-white btn-sm card-link">Comprar <img src="/../images/cart2.png" width="25"></button>
                 </form>
             </div>
         </div>

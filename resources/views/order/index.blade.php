@@ -22,7 +22,7 @@
             @forelse($order->Products as $product)
 
             <tr>
-                <td><img style="width: 340px" src="{{$product->image}}"> </td>
+                <td style="width:20em"><img style="width: 100%" src="{{$product->image}}"> </td>
                 <td class="align-middle">{{$product->pivot->name}}</td>
                 <td class="align-middle">{{$product->pivot->units}}</td>
                 <td class="align-middle">{{ number_format($product->pivot->price * $product->pivot->units, 2, ',', '.')}}</td>
